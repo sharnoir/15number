@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 16px;
+
+}
+
+/* style */
+
+html,
+body {
+    font-size: 12px;
+}
+
+/* 
+em은 내가 가진 폰트사이즈를 기준
+1em --> 16px
+2em --> 16px*2 --> 32px
+
+vw --> viewport 넓이 기준
+vh --> viewport 높이 기준
+
+rem --> root(html,body) 기준 
+1rem --> 12px
+2rem --> 12px*2 --> 24px
+*/
+
+h1 p {
+    font-size: 2em;
+}
+
+
+.progress-bar {
+    position: relative;
+    width: 960px;
+    height: 30px;
+    margin: 30em auto;
+    border: 1px solid #ec0f0f;
+}
+
+.progress-bar .bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* =height: 100%; */
+    left: 0;
+    width: 0;
+    background: rgb(54, 155, 69);
+}
+
+.progress-bar .rate {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    font-size: 20px;
+}
